@@ -1,1 +1,170 @@
-<mxfile host="app.diagrams.net" modified="2021-04-12T21:07:14.186Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.5.10" etag="25pnmqInnHlibXbjNiDG" type="github"><diagram id="YKbAlAZLTunfo-_gDzLD">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-12T21:08:56.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="eGqm1oG1GqopyKNFB4ZF" version="14.5.10" type="github">
+  <diagram id="YKbAlAZLTunfo-_gDzLD" name="Page-1">
+    <mxGraphModel dx="3555" dy="1905" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1_25PXRFe8at6L3lJLj7-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="40" width="830" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-2" value="Medicalseach" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-3" value="https://www.medicalseach.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-4" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.navigation.scrollBar;strokeColor=#999999;barPos=97.204;fillColor2=#99ddff;strokeColor2=none;direction=north;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="807" y="115" width="23" height="565" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-5" value="sickle cell disease" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="80" y="340" width="648" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-6" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="740" y="115" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-7" value="Advance Search" style="shape=ellipse;fillColor=#eeeeee;strokeColor=#999999;gradientColor=#cccccc;html=1;align=left;spacingLeft=4;fontSize=17;fontColor=#666666;labelPosition=right;shadow=0;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="80" y="380" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/simpline-mix/64/simpline_40-128.png" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="679" y="120" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-9" value="Profile" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#666666;align=left;verticalAlign=bottom;strokeColor=#666666;labelBackgroundColor=none;fillColor=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="710" y="160" width="80" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-10" value="Activity" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#666666;align=left;verticalAlign=bottom;strokeColor=#666666;labelBackgroundColor=none;fillColor=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="610" y="150" width="90" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-11" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678109-profile-group-128.png;fillColor=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="610" y="120" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-12" value="Users" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=SW;callStyle=line;fontSize=17;fontColor=#666666;align=left;verticalAlign=bottom;strokeColor=#666666;labelBackgroundColor=none;fillColor=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-1">
+          <mxGeometry x="520" y="150" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-13" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="30" width="830" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-14" value="Medicalseach" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-15" value="https://www.medicalseach.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-16" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.navigation.scrollBar;strokeColor=#999999;barPos=72.688;fillColor2=#99ddff;strokeColor2=none;direction=north;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="807" y="115" width="23" height="565" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-17" value="&lt;&lt; Prev 1 2 3 4 5 6 7 8 9 10 Next &gt;&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.navigation.pagination;linkText=;fontSize=17;fontColor=#0000ff;fontStyle=4;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="205" y="660" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-18" value="sickle cell disease" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="20" y="140" width="439" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-19" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="740" y="115" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-20" value="" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.filter" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="470" y="145" width="33.33" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/minimal-7/64/Filter-128.png" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="508" y="140" width="47" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-22" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.help_icon;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="560" y="142.5" width="30" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-23" value="&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Title: Sickle-cell disease.&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Authors: Rees DC, Williams TN, Gladwin MT.&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Keywords:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Tags:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Click here for link&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="20" y="230" width="680" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-24" value="&lt;div&gt;&lt;span&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;&lt;div&gt;Title: Treatment Options for Sickle Cell Disease.&lt;/div&gt;&lt;div&gt;Authors: Meier ER.&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(32 , 84 , 147)&quot;&gt;Keywords:&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Tags:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Click here for link&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="20" y="330" width="680" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-25" value="&lt;div&gt;&lt;span&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;&lt;div&gt;Title: Sickle cell disease: a review for the internist.&lt;/div&gt;&lt;div&gt;Authors:&amp;nbsp;Pinto VM, Balocco M, Quintino S, Forni GL.&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(32 , 84 , 147)&quot;&gt;Keywords:&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Tags:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#205493&quot;&gt;&lt;b&gt;Click here for link&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-13">
+          <mxGeometry x="20" y="430" width="680" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-26" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="790" width="830" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-27" value="Medicalseach" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-28" value="https://www.medicalseach.com" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-29" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.navigation.scrollBar;strokeColor=#999999;barPos=94.194;fillColor2=#99ddff;strokeColor2=none;direction=north;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="807" y="115" width="23" height="565" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-30" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.searchBox;strokeColor=#999999;mainText=;strokeColor2=#008cff;fontColor=#666666;fontSize=17;align=left;spacingLeft=3;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="200" y="200" width="249" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-31" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="740" y="115" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-32" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.misc.help_icon;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="470" y="202.5" width="30" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-33" value="ADD" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="510" y="200.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-34" value="Filter By" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#6C767D;fontColor=#ffffff;whiteSpace=wrap;align=left;verticalAlign=middle;fontStyle=0;fontSize=14;spacingLeft=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="34" y="200" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-35" value="" style="shape=triangle;direction=south;fillColor=#ffffff;strokeColor=none;perimeter=none;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-34">
+          <mxGeometry x="1" y="0.5" width="10" height="5" relative="1" as="geometry">
+            <mxPoint x="-17" y="-2.5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-36" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="34" y="243" width="176" height="187" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-37" value="Author" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry width="170" height="30" relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-38" value="Publish Date" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry width="170" height="30" relative="1" as="geometry">
+            <mxPoint y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-39" value="Keywords" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;labelBackgroundColor=#00CCCC;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry width="170" height="30" relative="1" as="geometry">
+            <mxPoint y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-40" value="Tags" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry x="-2" y="97" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-41" value="Title" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry x="-2" y="127" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-42" value="Something else here" style="fillColor=none;strokeColor=none;align=left;spacing=20;fontSize=14;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-36">
+          <mxGeometry x="-2" y="157" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-43" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#DFDFDF;html=1;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-26">
+          <mxGeometry x="34" y="450" width="676" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-44" value="ADDED FILTERS" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;strokeColor=none;fillColor=#0085FC;fontColor=#ffffff;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-43">
+          <mxGeometry width="676" height="30" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-45" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-43">
+          <mxGeometry width="676" height="30" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-46" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-43">
+          <mxGeometry width="676" height="30" relative="1" as="geometry">
+            <mxPoint y="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-47" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;perimeter=none;whiteSpace=wrap;resizeWidth=1;align=left;spacing=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-43">
+          <mxGeometry width="676" height="30" relative="1" as="geometry">
+            <mxPoint y="90" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1_25PXRFe8at6L3lJLj7-48" value="" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;fontColor=inherit;html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.bottomButton;rSize=5;perimeter=none;whiteSpace=wrap;resizeWidth=1;resizeHeight=0;align=left;spacing=10;" vertex="1" parent="1_25PXRFe8at6L3lJLj7-43">
+          <mxGeometry y="1" width="676" height="30" relative="1" as="geometry">
+            <mxPoint y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
