@@ -7,5 +7,5 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY MedSearch .
+COPY . .
 CMD ["python", "MedSearch/manage.py", "runserver"]
