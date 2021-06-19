@@ -1,90 +1,149 @@
+import os
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'MedSearch.settings')
+from datetime import datetime
+import django
+
+django.setup()
+
+from articles.models import Article
+import pprint
 from Bio import Entrez
-# import pprint
-import csv
-
-def getPMID(RAW_data):
-  PMID=RAW_data["PubmedArticle"][i]["MedlineCitation"]["PMID"][0:8]
-  return PMID
-
-def getAuthorList(RAW_data):
-  author_List = []
-  if "AuthorList" in RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]:
-    # print(RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["AuthorList"])
-    for author in range(len(RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["AuthorList"])):
-      firstname=RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["AuthorList"][author].get("ForeName")
-      # print(firstname)
-      if firstname == None:
-        firstname = ""
-      lastname = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["AuthorList"][author].get("LastName")
-      if lastname == None:
-        lastname = ""
-      author = firstname+"/"+lastname
-      author_List.append(author)
-  print(author_List)
-  return author_List
-
-def getArticleTitle(RAW_data):
-  title = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleTitle"]
-  return title
-
-def getArticleDate(RAW_data):
-  if RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleDate"] != []:
-    date=list(RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleDate"][0].values())
-    return date
-
-def getAbstractText(RAW_data):
-  absText = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
-  lines =""
-  for lin in range(len(absText)):
-    line = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Abstract"]["AbstractText"][lin]
-    lines = lines+line
-  return lines
-
-def getArticleKeywords(RAW_data):
-  pubmed_keywords=RAW_data["PubmedArticle"][i]["MedlineCitation"]["KeywordList"]
-  keywords = []
-
-  if len(pubmed_keywords) !=0:
-    pubmed_keywords=pubmed_keywords[0]
-    for keyW in range(len(pubmed_keywords)):
-      keyword=pubmed_keywords[keyW]
-      keywords.append(keyword[:])
-  return keywords
-
-def getArticleLang(RAW_data):
-  lang= RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Language"][0]
-  return lang
+from django.conf import settings
 
 
-# csv_file = open('C:\\Users\\HP\\Desktop\\BoğaziçiSWE\\SWE_573_Software Development Practice\\PyCharm Projects\\EntrezTest\\csv_file.csv','w',encoding='utf-8')
-# writer = csv.writer(csv_file)
-
-def entrez_search():
-
-  Entrez.email = "alper.pazarlioglu@boun.edu.tr"
-################################################################################################
-  handle = Entrez.esearch(db="pubmed", retmax=14, term="reflux", idtype="acc")
-# handle = Entrez.esearch(db="pubmed", retstart=10000, retmax=50000, term="reflux", idtype="acc")
-  record = Entrez.read(handle)
-  handle.close()
-  return record
+def getPMID(RAW_data, i):
+    PMID = RAW_data["PubmedArticle"][i]["MedlineCitation"]["PMID"][0:8]
+    return PMID
 
 
-article_list = entrez_search()["IdList"]
-print(len(article_list))
-# for article in article_list:
-#   print(article)
-PMID=", ".join(article_list)
+def getAuthorList(RAW_data, i):
+    author_List = []
+    try:
+        authors_from_entrez = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["AuthorList"]
+        for author in range(len(authors_from_entrez)):
+            firstname = authors_from_entrez[author].get("ForeName")
+            if firstname == None:
+                firstname = ""
+            lastname = authors_from_entrez[author].get("LastName")
+            if lastname == None:
+                lastname = ""
+            full_name_of_author = firstname + " " + lastname
+            author_List.append(full_name_of_author)
+    except:
+        author_List = ["N/A"]
 
-################################################################################################
-handle2 = Entrez.efetch(db="pubmed", id=PMID, rettype="abstract", retmode="xml")
-# handle2 = Entrez.efetch(db="pubmed", id=PMID, rettype="abstract", retmode="xml", retstart=10000)
-record2 = Entrez.read(handle2)
-handle2.close()
-print("length:", len(record2.get("PubmedArticle")))
-# pprint.pprint(record2)
+    for author in author_List:
+        formatted_author_list = ", ".join(author_List)
+
+    return formatted_author_list
 
 
-for i in range(len(record2.get("PubmedArticle"))):
-  if "Abstract" in record2["PubmedArticle"][i]["MedlineCitation"]["Article"]:
-      print(getPMID(record2))
+def getArticleTitle(RAW_data, i):
+    title = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleTitle"]
+    return title
+
+
+def getArticleDate(RAW_data, i):
+    formatted_date = ""
+    articleDate = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleDate"]
+    try:
+        day = articleDate[0].get("Day")
+        month = articleDate[0].get("Month")
+        year = articleDate[0].get("Year")
+        date = list(RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["ArticleDate"][0].values())
+        formatted_date = year + "-" + month + "-" + day
+        # formatted_date = datetime.strptime(formatted_date, "%Y %m %d")
+    except:
+        articleDate = RAW_data["PubmedArticle"][i]["MedlineCitation"]["DateRevised"]
+        day = articleDate.get("Day")
+        month = articleDate.get("Month")
+        year = articleDate.get("Year")
+        formatted_date = year + "-" + month + "-" + day
+    return formatted_date
+
+
+def getAbstractText(RAW_data, i):
+    absText = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Abstract"]["AbstractText"]
+    lines = ""
+    for lin in range(len(absText)):
+        line = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Abstract"]["AbstractText"][lin]
+        lines = lines + line
+    return lines
+
+
+def getArticleKeywords(RAW_data, i):
+    pubmed_keywords = RAW_data["PubmedArticle"][i]["MedlineCitation"]["KeywordList"]
+    keywords = []
+
+    if len(pubmed_keywords) != 0:
+        pubmed_keywords = pubmed_keywords[0]
+        for keyW in range(len(pubmed_keywords)):
+
+            keyword = pubmed_keywords[keyW]
+            keywords.append(keyword[:])
+
+            for keyword in keywords:
+                formatted_keywords = ", ".join(keywords)
+    else:
+        formatted_keywords = "N/A"
+
+    return formatted_keywords
+
+
+def getArticleLang(RAW_data, i):
+    lang = RAW_data["PubmedArticle"][i]["MedlineCitation"]["Article"]["Language"][0]
+    return lang
+
+
+Entrez.email = "alper.pazarlioglu@boun.edu.tr"
+
+
+def entrez_esearch(batch):
+    if batch == 1:
+        range = 0
+    else:
+        range = batch * 1000
+    handle = Entrez.esearch(db="pubmed", retstart=range, retmax=1000, term="reflux", idtype="acc")
+    records = Entrez.read(handle)
+    handle.close()
+
+    article_list = records["IdList"]
+    print(len(article_list))
+
+    PMID = ", ".join(article_list)
+
+    return PMID
+
+
+def entrez_efetch(PMID):
+    handle = Entrez.efetch(db="pubmed", id=PMID, rettype="abstract", retmode="xml")
+    records = Entrez.read(handle)
+    handle.close()
+    print("length:", len(records.get("PubmedArticle")))
+    pprint.pprint(records)
+    return records
+
+
+def save_to_db(x):
+    for i in range(0, x, 1):
+        print("batch", i)
+        PMID = entrez_esearch(i)
+        print(PMID)
+        articles_data = entrez_efetch(PMID)
+        print(articles_data)
+        for j in range(len(articles_data.get("PubmedArticle"))):
+            if "Abstract" in articles_data["PubmedArticle"][j]["MedlineCitation"]["Article"]:
+                all_article = Article(
+                PMID=getPMID(articles_data,j),
+                ArticleTitle=getArticleTitle(articles_data,j),
+                ArticleDate=getArticleDate(articles_data,j),
+                AuthorList=getAuthorList(articles_data,j),
+                AbstractText=getAbstractText(articles_data,j),
+                ArticleKeywords=getArticleKeywords(articles_data,j),
+                )
+
+                all_article.save()
+
+
+save_to_db(50)
