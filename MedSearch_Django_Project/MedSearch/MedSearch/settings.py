@@ -14,6 +14,7 @@ from pathlib import Path
 from secrets import *
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+from .secrets import *
 
 
 # Quick-start development settings - unsuitable for production
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'MedSearch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'postgresMedsearch',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'db',

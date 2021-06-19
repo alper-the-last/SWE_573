@@ -121,19 +121,19 @@ def entrez_efetch(PMID):
     records = Entrez.read(handle)
     handle.close()
     print("length:", len(records.get("PubmedArticle")))
-    pprint.pprint(records)
+    # pprint.pprint(records)
     return records
 
 
 def save_to_db(x):
-    for i in range(0, x, 1):
+    for i in range(1, x, 1):
         print("batch", i)
         PMID = entrez_esearch(i)
-        print(PMID)
         articles_data = entrez_efetch(PMID)
-        print(articles_data)
+
         for j in range(len(articles_data.get("PubmedArticle"))):
             if "Abstract" in articles_data["PubmedArticle"][j]["MedlineCitation"]["Article"]:
+                # print(getPMID(articles_data,j))
                 all_article = Article(
                 PMID=getPMID(articles_data,j),
                 ArticleTitle=getArticleTitle(articles_data,j),
