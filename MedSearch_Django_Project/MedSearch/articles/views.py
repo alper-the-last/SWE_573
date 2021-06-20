@@ -37,22 +37,16 @@ def Results(request):
         if form.is_valid():
             q = form.cleaned_data['q']
 
-            # order by ID to retrieve the most recent article first as I stored the
-            # articles_in_db = Article.objects.order_by("-id")
             articles_in_db = Article.objects
-            # results = articles_in_db.filter(Q(ArticleTitle__icontains=q))
 
-            # results = articles_in_db.filter(ArticleTitle=q)
 
             vector = SearchVector("ArticleKeywords", weight='A') + \
                      SearchVector("ArticleTitle", weight='B') + \
                      SearchVector("AbstractText", weight='C')
 
-            query = SearchQuery(q)
+            query = SearchQuery(q, search_type='phrase')
 
             results = articles_in_db.annotate(search=SearchVector("ArticleTitle", "AbstractText", "ArticleKeywords"), ).filter(search=q)
-
-            # results = articles_in_db.annotate(rank=SearchRank(vector, query, cover_density=True)).order_by('-rank').filter(search=query)
 
 
 
