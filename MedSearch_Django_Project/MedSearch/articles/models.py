@@ -10,3 +10,15 @@ class Article(models.Model):
     AbstractText = models.TextField()
     ArticleKeywords = models.TextField()
     ArticleLang = models.CharField(max_length=250)
+
+class Tags(models.Model):
+    MedSearchTagName = models.TextField()
+    PMID = models.CharField(max_length=16)
+    WikiID = models.TextField()
+    WikiLabel = models.TextField()
+    WikiTitle = models.TextField()
+    WikiURL = models.TextField()
+    WikiDescription = models.TextField()
+
+    def __str__(self):
+        return self.MedSearchTagName
