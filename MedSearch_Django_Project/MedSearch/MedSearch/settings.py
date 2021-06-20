@@ -52,7 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'MedSearch.urls'
+# ROOT_URLCONF = 'MedSearch.urls'
+ROOT_URLCONF = 'articles.urls'
 
 TEMPLATES = [
     {
