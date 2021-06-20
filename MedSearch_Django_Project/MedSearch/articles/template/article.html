@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h5>Title: {{article.ArticleTitle }}</h5>
+    <h5>PMID: {{ article.PMID }}</h5>
+    <h5>Article Date: {{ article.ArticleDate }}</h5>
+    <h5>Authors: {{ article.AuthorList }}</h5>
+    <h5>Abstract:</h5>
+    <p>{{ article.AbstractText }}</p>
+    <h5>Keywords: {{ article.ArticleKeywords }}</h5>
+    <h5>Tags: </h5>
+
+{% endblock %}

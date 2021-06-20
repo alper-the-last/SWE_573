@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container">
+        <br/>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="card-body row no-gutters align-items-center">
+                    <div class="col-auto">
+                        <i class="fas fa-search h4 text-body"></i>
+                    </div>
+                    <form method="get">
+                        {{ form.as_p }}
+                        <input class="btn btn-lg btn-success" type="submit" value='search'>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+            {% if q %}
+                <h1>Articles containing "{{ q }}"</h1>
+                <p>
+                    {% with results.count as total_search_results %}
+                        Found {{ total_search_results }} results
+                    {% endwith %}
+                </p>
+
+                {% for article in results %}
+                    <h5>Article Title: <a href="{%url 'article' article.PMID %}">{{ article.ArticleTitle }} </a></h5>
+
+                    <h5>PMID: {{ article.PMID}}</h5>
+                    <h5>Article Abstract:{{ article.AbstractText }}</h5>
+                    <h5>Keywords:{{ article.ArticleKeywords }}</h5>
+<!--                <h5>Tags:{{ article.ArticleKeywords }}</h5>-->
+                    <br/>
+
+                {% empty %}
+                    <p> no results were found </p>
+                {% endfor %}
+{#                {%  %}#}
+            {% endif %}
+
+{% endblock %}
