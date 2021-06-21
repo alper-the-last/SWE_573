@@ -1,0 +1,56 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "environment": [
+        {
+          "name": "POSTGRES_DB",
+          "value": "postgres"
+        },
+        {
+          "name": "POSTGRES_USER",
+          "value": "postgres"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "value": "postgres"
+        }
+      ],
+      "essential": true,
+      "image": "postgres",
+      "memmory": 350,
+      "mountPoints": [
+        {
+          "containerPath": "./data/db:/var/lib/postgresql/data",
+          "sourceVolume": "db"
+        }
+      ],
+      "name": "db",
+      "portMappings": [
+        {
+          "containerPort": "3602",
+          "hostPort": "5432"
+        }
+      ]
+    },
+    {
+      "essential": true,
+      "links": "db",
+      "image": "medsearch_django_project_web",
+      "memory": 1200,
+            "mountPoints": [
+        {
+          "containerPath": "./MedSearch:/MedSearch",
+          "sourceVolume": "web"
+        }
+      ],
+      "name": "web",
+      "portMappings": [
+        {
+          "containerPort": "8000",
+          "hostPort": "8000"
+        }
+      ]
+    }
+  ]
+}
