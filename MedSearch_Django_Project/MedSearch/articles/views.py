@@ -39,16 +39,14 @@ def Results(request):
 
             articles_in_db = Article.objects
 
-
             vector = SearchVector("ArticleKeywords", weight='A') + \
                      SearchVector("ArticleTitle", weight='B') + \
                      SearchVector("AbstractText", weight='C')
 
             query = SearchQuery(q, search_type='phrase')
 
-            results = articles_in_db.annotate(search=SearchVector("ArticleTitle", "AbstractText", "ArticleKeywords"), ).filter(search=q)
-
-
+            results = articles_in_db.annotate(
+                search=SearchVector("ArticleTitle", "AbstractText", "ArticleKeywords"), ).filter(search=query)
 
         print("results finished")
         print(len(results))
@@ -88,3 +86,23 @@ def loginPage(request):
 def logoutPage(request):
     logout(request)
     return redirect('Login')
+
+
+def get_tag_info(request):
+    form = tagFunction()
+    tag_term = ''
+    results = []
+
+    if 'tag_term' in request.get:
+        form = tagFunction(request.get)
+
+        if form.is_valid():
+            tag_term = form.cleaned_data['tag_term']
+            with urllib.request.urlopen(
+                    "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=" + tag_term + "&language=en&limit=5&format=json") as response:
+                results = response.read()
+
+    else:
+        form = tagFunction()
+
+    return render(request, "article.html", {"form": form, 'tags': results})
