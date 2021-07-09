@@ -16,13 +16,14 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-from .secrets import *
+# from .secrets import *
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
+SECRET_KEY = 'django-insecure-j-!3j0$7-a_ru_^wzu&11g691nz(zd@bt-+x-nv4ok+j^y$x%6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
